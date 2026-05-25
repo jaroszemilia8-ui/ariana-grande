@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ariana Grande — Strona Fanowska</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: #fff5f8;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background: linear-gradient(135deg,#ffd6e7,#f3d1ff);
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:50px;
+      margin-bottom:15px;
+      color:#8b3fa8;
+    }
+
+    header p{
+      font-size:20px;
+      max-width:800px;
+      margin:auto;
+    }
+
+    nav{
+      background:white;
+      padding:15px;
+      text-align:center;
+      position:sticky;
+      top:0;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#8b3fa8;
+      margin:0 15px;
+      font-weight:bold;
+    }
+
+    section{
+      padding:60px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:30px;
+      color:#8b3fa8;
+      font-size:36px;
+    }
+
+    .hero-img{
+      width:300px;
+      border-radius:20px;
+      display:block;
+      margin:30px auto;
+      box-shadow:0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .songs, .albums{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:15px;
+    }
+
+    .gallery img{
+      width:100%;
+      border-radius:15px;
+      height:300px;
+      object-fit:cover;
+    }
+
+    ul{
+      max-width:700px;
+      margin:auto;
+      font-size:20px;
+    }
+
+    li{
+      margin:15px 0;
+    }
+
+    footer{
+      background:#8b3fa8;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:40px;
+    }
+
+    @media(max-width:700px){
+      header h1{
+        font-size:35px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Ariana Grande</h1>
+    <p>
+      Ariana Grande to jedna z najpopularniejszych gwiazd muzyki pop na świecie.
+      Słynie z niesamowitego głosu, hitowych piosenek i wyjątkowego stylu.
+    </p>
+
+    <img class="hero-img"
+      src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1200&auto=format&fit=crop"
+      alt="Ariana Grande">
+  </header>
+
+  <nav>
+    <a href="#bio">Biografia</a>
+    <a href="#songs">Piosenki</a>
+    <a href="#albums">Albumy</a>
+    <a href="#gallery">Galeria</a>
+    <a href="#facts">Ciekawostki</a>
+  </nav>
+
+  <section id="bio">
+    <h2>Biografia</h2>
+
+    <p>
+      Ariana Grande urodziła się 26 czerwca 1993 roku w Boca Raton na Florydzie.
+      Swoją karierę rozpoczęła jako aktorka w serialach młodzieżowych,
+      a później stała się światową gwiazdą muzyki pop.
+    </p>
+
+    <br>
+
+    <p>
+      Jej muzyka zdobyła miliony fanów na całym świecie.
+      Ariana znana jest z potężnego głosu oraz charakterystycznego wysokiego kucyka.
+    </p>
+  </section>
+
+  <section id="songs">
+    <h2>Najpopularniejsze piosenki</h2>
+
+    <div class="songs">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501612780327-45045538702b?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>7 rings</h3>
+          <p>Jeden z największych hitów Ariany Grande.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>thank u, next</h3>
+          <p>Piosenka o relacjach i życiowych doświadczeniach.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Into You</h3>
+          <p>Popularny utwór z albumu Dangerous Woman.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="albums">
+    <h2>Albumy</h2>
+
+    <div class="albums">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Yours Truly</h3>
+          <p>Debiutancki album wydany w 2013 roku.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1499364615650-ec38552f4f34?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Sweetener</h3>
+          <p>Album, który zdobył ogromną popularność.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Positions</h3>
+          <p>Nowoczesny album z 2020 roku.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Galeria zdjęć</h2>
+
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?q=80&w=1200&auto=format&fit=crop">
+      <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1200&auto=format&fit=crop">
+      <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?q=80&w=1200&auto=format&fit=crop">
+      <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1200&auto=format&fit=crop">
+    </div>
+  </section>
+
+  <section id="facts">
+    <h2>Ciekawostki</h2>
+
+    <ul>
+      <li>Ariana Grande kocha zwierzęta.</li>
+      <li>Jej znakiem rozpoznawczym jest wysoki kucyk.</li>
+      <li>Zdobyła wiele nagród muzycznych.</li>
+      <li>Jest jedną z najpopularniejszych piosenkarek pop.</li>
+      <li>Ma miliony fanów na całym świecie.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Strona wykonana na informatykę 💜</p>
+  </footer>
+
+</body>
+</html>
